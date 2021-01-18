@@ -1,0 +1,180 @@
+.footer {
+  height: 366px;
+  background-color: #F5F5F5;
+  position: relative;
+
+  @media (min-width: 1440px) {
+    height: 150px;
+  }
+
+  &__contacts {
+    height: 118px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-top: 67px;
+    padding-right: 20px;
+    border-bottom: 1px solid #EAEAEA;
+
+    @media (min-width: 1440px) {
+      padding-top: 0;
+      height: 100px;
+    }
+  }
+
+  &__dibix-logo {
+    margin-left: 12px;
+    margin-right: 60px;
+
+    @media (min-width: 1440px) {
+      margin-top: 14px;
+    }
+  }
+
+  &__phone {
+    &-container {
+      display: flex;
+      width: 150px;
+      font-size: 14px;
+      margin-bottom: 13px;
+    }
+    &-number {
+      color: #C0A570;
+      margin: 0;
+    }
+    &-logo {
+      margin-right: 13px;
+      display: inline-block;
+    }
+  }
+
+  &__mail {
+    &-container {
+      display: flex;
+      width: 150px;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      color: #C0A570;
+      margin: 0;
+    }
+
+    &-logo {
+      width: 16px;
+      height: 16px;
+      padding-top: 4px;
+      margin-right: 13px;
+      display: inline-block;
+    }
+  }
+
+  &__socials {
+    @media (min-width: 1440px) {
+      margin-left: 95px;
+    }
+
+    &--inst {
+      margin-left: 22px;
+    }
+  }
+
+  &__menu-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    border-bottom: 1px solid #EAEAEA;
+
+    @media (min-width: 1440px) {
+      position: absolute;
+      flex-direction: row;
+      width: 900px;
+      right: 540px;
+      left: 100px;
+      bottom: 80px;
+      border: none;
+    }
+  }
+
+  &__main, &__types,
+  &__income, &__team,
+  &__faq {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    background-color: inherit;
+    height: 34px;
+    border: none;
+    padding-bottom: 16px;
+    padding-top: 7px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #C0A570;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 16px;
+    }
+  }
+
+  &__initials {
+    color: #9F9F9F;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 22px;
+
+    &-container {
+      @media (min-width: 1440px) {
+        flex-basis: 100%;
+
+      }
+    }
+  }
+
+  &__contact-container {
+    @media (min-width: 1440px) {
+      margin: 25px 0 0 0;
+    }
+  }
+
+  &__main {
+    @media (min-width: 1440px) {
+      width: 67px;
+      margin-right: 35px;
+    }
+  }
+
+  &__types {
+    @media (min-width: 1440px) {
+      width: 145px;
+      margin-right: 35px;
+    }
+  }
+
+  &__income {
+    @media (min-width: 1440px) {
+      width: 171px;
+      margin-right: 35px;
+    }
+  }
+
+  &__team {
+    @media (min-width: 1440px) {
+      width: 122px;
+      margin-right: 35px;
+    }
+  }
+
+  &__faq {
+    @media (min-width: 1440px) {
+      width: 139px;
+    }
+  }
+}

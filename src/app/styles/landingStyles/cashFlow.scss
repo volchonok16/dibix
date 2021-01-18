@@ -1,0 +1,175 @@
+.cash-flow {
+  box-sizing: border-box;
+  position: relative;
+  width: 300px;
+  height: 768px;
+  margin: 0 auto;
+  color: #fff;
+  background-image: url("../../assets/cashFlow-mobile-bg.png");
+  padding-top: 40px;
+
+  @media (min-width: 768px) {
+    background-image: url("../../assets/cashflow-desktop-bg.png");
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 95%;
+    max-width: 1368px;
+    border-radius: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 80px 0 0 60px;
+    width: 1366px;
+    height: 515px;
+  }
+
+  &__heading {
+    display: block;
+    text-align: center;
+    margin: 0;
+    font-size: 26px;
+
+    @media (min-width: 768px) {
+      text-align: left;
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 40px;
+    }
+
+    &--wrapper {
+      width: 250px;
+      margin: 0 auto;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(159, 159, 159, 0.2);
+
+      @media (min-width: 768px) {
+        margin-left: 40px;
+        width: 628px;
+        border: none;
+      }
+
+      @media (min-width: 1440px) {
+        margin: 0 0 70px 0;
+        padding: 0;
+      }
+    }
+  }
+
+  &__contract,
+  &__setting,
+  &__dividend {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 250px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid rgba(159, 159, 159, 0.2);
+
+    @media (min-width: 768px) {
+      box-sizing: border-box;
+      border-right: 1px solid rgba(159, 159, 159, 0.2);
+      border-bottom: none;
+      padding-top: 20px;
+      display: inline-block;
+      height: 150px;
+      width: 33%;
+    }
+
+    &-days {
+      margin: 28px 0 11px 0;
+      font-weight: bold;
+      color: #C0A570;
+      font-size: 26px;
+
+      @media (min-width: 768px) {
+        margin: 0;
+      }
+
+      @media (min-width: 1440px) {
+        font-size: 40px;
+      }
+    }
+
+    &-theme {
+      font-size: 14px;
+
+      @media (min-width: 768px) {
+        min-height: 32px;
+      }
+
+      @media (min-width: 1440px) {
+        font-size: 16px;
+        width: 319px;
+        margin: 20px auto 0 auto;
+      }
+    }
+  }
+
+  &__dividend {
+    @media (min-width: 768px) {
+      border-right: none;
+    }
+  }
+
+  &__setting {
+
+    &-theme {
+      @media (min-width: 1440px) {
+        width: 219px;
+      }
+    }
+  }
+
+  &__learn-more {
+    cursor: pointer;
+    display: block;
+    width: 243px;
+    height: 60px;
+    margin: 30px auto 0 auto;
+    background-color: inherit;
+    color: #C0A570;
+    font-weight: 500;
+    font-size: 17px;
+    border: 1px solid #C0A570;
+    border-radius: 5px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #fff;
+      background-color: #C0A570;
+    }
+
+    @media (min-width: 768px) {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    @media (min-width: 1440px) {
+      top: 105px;
+      right: 97px;
+      margin: 0;
+    }
+  }
+
+  &__line {
+    display: block;
+    margin: 15px auto 0 auto;
+    height: 5px;
+    width: 139px;
+    background: linear-gradient(90deg, #97794D 10%, #E3CB8F 50%);
+
+    @media (min-width: 768px) {
+      margin: 0;
+    }
+  }
+
+  &__points-container {
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+}

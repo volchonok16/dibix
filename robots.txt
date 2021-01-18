@@ -1,0 +1,9 @@
+User-Agent: *
+Disallow: /*?*
+Disallow: /404
+Disallow: /notifications/
+Disallow: /500/
+Disallow: /api/
+
+HOST: https://dibix.io
+SITEMAP: https://dibix.io/sitemap.xml

@@ -1,0 +1,875 @@
+.possible-income {
+  height: 390px;
+  width: 296px;
+  border: 2px solid #C0A570;
+  margin: 0 auto;
+  background-image: url("../../assets/possible-income-mobile-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position-y: -11px;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    width: 93.75%;
+    height: 340px;
+    background-image: url("../../assets/possible-income-desctop.png");
+    background-position: 90% 50%;
+
+    @media (min-width: 1440px) {
+      margin-bottom: 120px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    position: relative;
+    max-width: 1362px;
+    height: 361px;
+  }
+
+  &__heading {
+    display: block;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    width: 258px;
+    height: 126px;
+
+    @media (min-width: 768px) {
+      margin-left: 20px;
+      margin-bottom: 0;
+      width: 380px;
+      height: 106px;
+      text-align: left;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 30px;
+      height: unset;
+      margin-top: 78px;
+      margin-left: 58px;
+      width: 53%;
+    }
+  }
+
+  &__content {
+    font-size: 16px;
+    text-align: center;
+    color: #333538;
+    width: 250px;
+    height: 72px;
+    margin: 18px auto 33px auto;
+
+    @media (min-width: 768px) {
+      margin-left: 20px;
+      margin-bottom: 0;
+      width: auto;
+      text-align: left;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 20px;
+      margin: 0 0 0 58px;
+      width: 35%;
+    }
+  }
+
+  &__line {
+    display: block;
+    margin: 0 auto;
+    height: 5px;
+    width: 139px;
+    background: linear-gradient(90deg, #97794D 10%, #E3CB8F 50%);
+
+    @media (min-width: 768px) {
+      margin-left: 50px;
+    }
+
+    @media (min-width: 1440px) {
+      margin: 30px 0 30px 58px;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    display: block;
+    width: 243px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 17px;
+    color: #FEFDFB;
+    border: none;
+    margin: 33px auto 0 auto;
+    background: linear-gradient(90deg, #97794D 0%, #E3CB8F 100%);
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: linear-gradient(90deg, #775f3c 0%, #f0d697 100%);
+    }
+
+    @media (min-width: 768px) {
+      margin-top: 0;
+    }
+
+    @media (min-width: 1440px) {
+      position: absolute;
+      left: 42.6%;
+      bottom: 78px;
+    }
+  }
+
+  &__form {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.219);
+
+    &-checkbox {
+      position: absolute;
+      background: #FEFDFB;
+      width: 20px;
+      height: 20px;
+      margin: 0;
+      left: 0;
+      bottom: 0;
+
+      &-label {
+        position: absolute;
+        text-align: center;
+        left: 0;
+        right: 0;
+        font-size: 11px;
+      }
+    }
+
+    &-checkbox--container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-right: 15px;
+      margin-left: 15px;
+      border-bottom: 1px solid rgba(159, 159, 159, 0.2);
+      padding-bottom: 20px;
+      cursor: pointer;
+
+      @media (min-width: 1440px) {
+        margin-top: 60px;
+        margin-right: 60px;
+        margin-left: 60px;
+        padding-bottom: 60px;
+      }
+    }
+
+    &-checkbox--first {
+      background-position-x: center;
+      background-image: url("../../assets/world-currencies.png");
+
+      @media (min-width: 1440px) {
+        background-image: url("../../assets/world-currencies-desktop.png");
+      }
+    }
+
+    &-checkbox--second {
+      background-position-x: center;
+      background-image: url("../../assets/crypto.png");
+
+      @media (min-width: 1440px) {
+        background-image: url("../../assets/crypto-desktop.png");
+      }
+    }
+
+    &-checkbox--third {
+      background-position-x: center;
+      background-image: url("../../assets/stocks.png");
+
+      @media (min-width: 1440px) {
+        background-image: url("../../assets/stocks-desktop.png");
+      }
+    }
+
+    &-checkbox--fourth {
+      background-position-x: center;
+      background-image: url("../../assets/dont-yet.png");
+
+      @media (min-width: 1440px) {
+        background-image: url("../../assets/dont-yet-desktop.png");
+      }
+    }
+
+    &-checkbox--first,
+    &-checkbox--second,
+    &-checkbox--third,
+    &-checkbox--fourth {
+      width: 125px;
+      height: 125px;
+
+      @media (min-width: 1440px) {
+        width: 192px;
+        height: 192px;
+      }
+    }
+
+    &-checkbox--field {
+      position: relative;
+      margin-bottom: 50px;
+    }
+
+    &-checkbox--text {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: -20px;
+    }
+
+    &-step {
+      margin-top: 26px;
+      font-size: 14px;
+      padding-left: 15px;
+      color: #9F9F9F;
+
+      @media (min-width: 1440px) {
+        font-size: 18px;
+        padding-left: 60px;
+        padding-top: 15px;
+      }
+
+      &--page {
+        color: #C0A570;
+        font-size: 18px;
+        font-weight: 500;
+        padding-right: 5px;
+
+        @media (min-width: 1440px) {
+          font-size: 24px;
+          padding-right: 10px;
+        }
+      }
+    }
+
+    &-progress {
+      width: 270px;
+      height: 20px;
+      border-radius: 35px;
+      border: 1px solid rgba(192, 165, 112, 0.2);
+      margin: 0;
+
+      @media (min-width: 1440px) {
+        width: 415px;
+      }
+
+      &-bar {
+        width: 83px;
+        height: 20px;
+        background: linear-gradient(90deg, #97794D 0%, #E3CB8F 100%);
+        border-radius: 35px;
+
+        @media (min-width: 1440px) {
+          width: 110px;
+        }
+
+        &-2 {
+          width: 120px;
+          height: 20px;
+          background: linear-gradient(90deg, #97794D 0%, #E3CB8F 100%);
+          border-radius: 35px;
+
+          @media (min-width: 1440px) {
+            width: 170px;
+          }
+        }
+
+        &-3 {
+          width: 160px;
+          height: 20px;
+          background: linear-gradient(90deg, #97794D 0%, #E3CB8F 100%);
+          border-radius: 35px;
+
+          @media (min-width: 1440px) {
+            width: 240px;
+          }
+        }
+
+        &-4 {
+          width: 200px;
+          height: 20px;
+          background: linear-gradient(90deg, #97794D 0%, #E3CB8F 100%);
+          border-radius: 35px;
+
+          @media (min-width: 1440px) {
+            width: 310px;
+          }
+        }
+
+        &-5 {
+          width: 100%;
+          height: 20px;
+          background: linear-gradient(90deg, #97794D 0%, #E3CB8F 100%);
+          border-radius: 35px;
+        }
+      }
+    }
+
+    &-back {
+      cursor: pointer;
+      position: absolute;
+      width: 125px;
+      height: 60px;
+      outline: none;
+      border: none;
+      background: none;
+      left: 10px;
+      bottom: 35px;
+      font-size: 17px;
+      color: #9F9F9F;
+
+      @media (min-width: 1440px) {
+        left: 500px;
+        bottom: 40px;
+        width: 185px;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+
+    &-next {
+      cursor: pointer;
+      position: absolute;
+      width: 125px;
+      height: 60px;
+      background: linear-gradient(90deg, #97794D 0%, #E3CB8F 100%);
+      border-radius: 5px;
+      border: none;
+      right: 15px;
+      bottom: 35px;
+      color: #fff;
+      font-weight: 500;
+      font-size: 17px;
+      outline: none;
+
+      @media (min-width: 1440px) {
+        right: 491px;
+        bottom: 40px;
+        width: 185px;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        background: linear-gradient(90deg, #775f3c 0%, #f0d697 100%);
+      }
+    }
+
+    &-arrow {
+      margin-left: 15px;
+      vertical-align: middle;
+
+      &-left {
+        margin-right: 15px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.possible-income-form {
+  position: fixed;
+  z-index: 999;
+  box-sizing: border-box;
+  padding-top: 40px;
+  width: 300px;
+  margin: auto;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid #C0A570;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04);
+
+  @media (min-width: 1440px) {
+    width: 1366px;
+    height: 732px;
+    padding-top: 0;
+    top: 50px;
+  }
+
+  &__line {
+    display: block;
+    margin: 0 auto;
+    height: 5px;
+    width: 139px;
+    background: linear-gradient(90deg, #97794D 10%, #E3CB8F 50%);
+
+    @media (min-width: 1440px) {
+      margin: 30px 0 30px 58px;
+    }
+  }
+
+  &__heading {
+    margin-top: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+
+    @media (min-width: 1440px) {
+      font-size: 30px;
+      text-align: left;
+      margin-left: 60px;
+      margin-bottom: 30px;
+
+      &--5 {
+        height: 76px;
+      }
+    }
+  }
+
+  &__cross {
+    cursor: pointer;
+    z-index: 52;
+    position: absolute;
+    display: flex;
+    left: 15px;
+    top: 15px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: #5c596100;
+      border: 1px solid #C0A570;
+    }
+
+    &--text {
+      display: none;
+      font-size: 13px;
+      color: #9F9F9F;
+      box-sizing: border-box;
+
+      @media (min-width: 1440px) {
+        font-size: 20px;
+        display: inline-block;
+        padding-top: 5px;
+      }
+    }
+
+    &--icon {
+      @media (min-width: 1440px) {
+        width: 25px;
+        height: 25px;
+        padding-top: 5px;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    text-align: center;
+
+    @media (min-width: 1440px) {
+      font-size: 20px;
+      text-align: left;
+      margin-left: 60px;
+    }
+
+    &--age {
+      width: 220px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media (min-width: 1440px) {
+        width: 820px;
+        margin: 0 0 0 60px;
+      }
+    }
+  }
+
+  &__points-form {
+    @media (min-width: 1440px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 60px;
+    }
+  }
+
+  &__point {
+    box-sizing: border-box;
+    width: 270px;
+    height: 70px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    margin: 0 auto 10px auto;
+    padding-left: 20px;
+
+    @media (min-width: 1440px) {
+      width: 399px;
+      margin: 0 0 16px 0;
+      margin-left: 45px;
+    }
+  }
+
+  &__radio {
+    width: 20px;
+    height: 20px;
+    margin: 25px 14px 25px 0;
+
+    &-label {
+      display: inline-block;
+      width: 195px;
+      font-size: 11px;
+      height: 24px;
+      margin: 0;
+
+      @media (min-width: 1440px) {
+        font-size: 13px;
+        width: 285px;
+      }
+    }
+
+    &-container {
+      margin: 32px 15px 0 15px;
+      padding-bottom: 70px;
+      border-bottom: 1px solid rgba(159, 159, 159, 0.2);
+
+      @media (min-width: 1440px) {
+        padding-bottom: 130px;
+      }
+    }
+  }
+
+  &__to-input,
+  &__from-input {
+    display: inline-block;
+    color: #C0A570;
+    font-size: 22px;
+    font-weight: 600;
+    padding-left: 0;
+    padding-bottom: 15px;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(159, 159, 159, 0.2);
+    width: 92px;
+    margin-top: 20px;
+
+    @media (min-width: 1440px) {
+      font-size: 40px;
+      width: 150px;
+      padding-bottom: 5px;
+    }
+  }
+
+  &__range-container {
+    display: flex;
+    margin: 0 22px 0 22px;
+  }
+
+  &__range-input {
+    position: absolute;
+
+    &--first {
+      @media (min-width: 1440px) {
+        left: 43px;
+      }
+    }
+
+    &--second {
+      @media (min-width: 1440px) {
+        left: 40px;
+      }
+    }
+
+    &--container {
+      position: relative;
+      width: 50%;
+
+      @media (min-width: 1440px) {
+        width: 45%;
+      }
+    }
+  }
+
+  &__invest-value {
+    display: flex;
+    flex-direction: row;
+    margin-left: 14px;
+    margin-right: 14px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @media (min-width: 1440px) {
+      margin: 0 65px 26px 65px;
+    }
+  }
+
+  &__budget-lines {
+    margin-top: 25px;
+    margin-left: 20px;
+    width: 258px;
+    height: 20px;
+    background-image: url("../../assets/budget-lines.png");
+
+    @media (min-width: 1440px) {
+      background-image: url("../../assets/budget-lines-desktop.png");
+      background-position: center;
+      margin-left: 65px;
+      width: 808px;
+    }
+  }
+
+  &__budget-numbers {
+    display: flex;
+    margin: 0 15px 0 15px;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(159, 159, 159, 0.2);
+
+    @media (min-width: 1440px) {
+      margin: 0 50px 0 60px;
+      padding-bottom: 145px;
+    }
+  }
+
+  &__types-container,
+  &__experience-container {
+    position: relative;
+    height: 727px;
+
+    @media (min-width: 1440px) {
+      box-sizing: border-box;
+      width: 1366px;
+      height: 100%;
+      padding-top: 80px;
+      background-image: url("../../assets/quiz-bg.png");
+      background-repeat: no-repeat;
+      background-position-x: 99.6%;
+      background-position-y: 0;
+      padding-right: 429px;
+    }
+  }
+
+  &__budget-container {
+    position: relative;
+    height: 614px;
+
+    @media (min-width: 1440px) {
+      box-sizing: border-box;
+      width: 1366px;
+      height: 100%;
+      padding-top: 80px;
+      background-image: url("../../assets/quiz-bg.png");
+      background-repeat: no-repeat;
+      background-position-x: 99.6%;
+      padding-right: 429px;
+    }
+  }
+
+  &__result-form {
+    position: relative;
+    height: 710px;
+
+    @media (min-width: 1440px) {
+      box-sizing: border-box;
+      width: 1366px;
+      height: 100%;
+      padding-top: 80px;
+      background-image: url("../../assets/quiz-bg.png");
+      background-repeat: no-repeat;
+      background-position-x: 99.6%;
+      background-position-y: 0;
+      padding-right: 429px;
+    }
+  }
+
+  &__age {
+    &-form {
+      position: relative;
+      height: 445px;
+
+      @media (min-width: 1440px) {
+        box-sizing: border-box;
+        width: 1366px;
+        height: 100%;
+        padding-top: 80px;
+        background-image: url("../../assets/quiz-bg.png");
+        background-repeat: no-repeat;
+        background-position-x: 99.6%;
+        background-position-y: 0;
+        padding-right: 429px;
+      }
+    }
+
+    &-input {
+      box-sizing: border-box;
+      background: rgba(159, 159, 159, 0.05);
+      border: 1px solid rgba(159, 159, 159, 0.3);
+      width: 266px;
+      height: 52px;
+      font-size: 14px;
+      margin: 20px 15px 0 15px;
+      padding: 0 0 0 15px;
+
+      @media (min-width: 1440px) {
+        width: 813px;
+        margin-top: 60px;
+        margin-left: 60px;
+      }
+    }
+
+    &-field {
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(159, 159, 159, 0.2);
+
+      @media (min-width: 1440px) {
+        padding-bottom: 250px;
+      }
+    }
+  }
+
+  &__name-input,
+  &__mail-input,
+  &__phone-input,
+  &__socials-input {
+    outline: 1px solid #C0A570;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 270px;
+    height: 52px;
+    background: rgba(159, 159, 159, 0.05);
+    border: 1px solid rgba(159, 159, 159, 0.3);
+    margin-top: 15px;
+    padding: 0 0 0 38px;
+
+    @media (min-width: 1440px) {
+      width: 398px;
+    }
+  }
+
+  &__contacts-container {
+    @media (min-width: 1440px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 30px;
+      padding-left: 30px;
+      margin-right: 30px;
+      margin-top: 50px;
+      padding-bottom: 70px;
+      border-bottom: 1px solid rgba(159, 159, 159, 0.3);
+    }
+  }
+
+  &__result-field {
+    position: relative;
+    margin: 0 15px 0 15px;
+
+    @media (min-width: 1440px) {
+      margin-left: 0;
+      flex-basis: 33%;
+      margin-right: 15px;
+    }
+
+    &--socials {
+      padding-bottom: 45px;
+      border-bottom: 1px solid rgba(159, 159, 159, 0.2);
+
+      @media (min-width: 1440px) {
+        border: none;
+      }
+    }
+  }
+
+  &__socials-input {
+    padding-left: 15px;
+  }
+
+  &__man-icon {
+    position: absolute;
+    left: 17px;
+    top: 34px;
+  }
+
+  &__mail-logo {
+    position: absolute;
+    left: 17px;
+    top: 36px;
+  }
+
+  &__phone-logo {
+    position: absolute;
+    left: 17px;
+    top: 34px;
+  }
+
+  &__final-form {
+    height: 460px;
+
+    @media (min-width: 1440px) {
+      box-sizing: border-box;
+      width: 1366px;
+      height: 100%;
+      padding-top: 80px;
+      background-image: url("../../assets/quiz-last-bg.png");
+      background-repeat: no-repeat;
+      background-position-x: right;
+      background-position-y: 0;
+      padding-right: 429px;
+    }
+  }
+
+  &__six-form-container {
+    border-bottom: 1px solid rgba(159, 159, 159, 0.2);
+    margin: 0 15px;
+    padding-bottom: 15px;
+
+    @media (min-width: 1440px) {
+      margin-left: 0;
+      margin-right: 0;
+      padding-bottom: 100px;
+    }
+  }
+
+  &__more-asks {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+
+    @media (min-width: 1440px) {
+      font-weight: 500;
+      font-size: 20px;
+      text-align: left;
+      padding-left: 60px;
+      margin-top: 100px;
+    }
+  }
+
+  &__hot-line {
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+
+    @media (min-width: 1440px) {
+      text-align: left;
+      margin-left: 60px;
+    }
+
+    &--bold {
+      font-weight: bold;
+    }
+  }
+}

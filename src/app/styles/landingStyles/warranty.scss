@@ -1,0 +1,93 @@
+.warranty {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  text-align: center;
+  min-width: 289px;
+  margin: 0 auto 60px auto;
+  background-image: url("../../assets/advantages-bg-mobile.svg");
+
+  @media (min-width: 1440px) {
+    background-image: none;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 116px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  &__capital,
+  &__support {
+    margin-bottom: 34px;
+  }
+
+  &__capital,
+  &__support,
+  &__commision {
+    @media (min-width: 1440px) {
+      display: grid;
+      grid-template-rows: 50px 80px;
+      grid-template-columns: 116px 319px;
+      grid-template-areas: "logo title" "logo text"; 
+      margin-top: 34px;
+      width: 435px;
+    }
+
+    &-title {
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 12px;
+
+      @media (min-width: 1440px) {
+        margin: 0;
+        grid-area: title;
+        align-self: center;
+        text-align: left;
+        margin-left: 30px;
+      }
+    }
+
+    &-text {
+      font-size: 16px;
+
+      @media (min-width: 1440px) {
+        width: 289px;
+        margin: 0;
+        text-align: left;
+        margin-left: 30px;
+        grid-area: text;
+      }
+    }
+
+    &-logo {
+      width: 100px;
+      height: 100px;
+
+      @media (min-width: 1440px) {
+        grid-area: logo;
+      }
+    }
+  }
+
+  &__capital-logo {
+    @media (min-width: 1440px) {
+      width: 116px;
+      height: 126px;
+    }
+  }
+
+  &__support-logo {
+    @media (min-width: 1440px) {
+      width: 102px;
+      height: 126px;
+    }
+  }
+
+  &__commision-logo {
+    @media (min-width: 1440px) {
+      width: 119px;
+      height: 126px;
+    }
+  }
+}

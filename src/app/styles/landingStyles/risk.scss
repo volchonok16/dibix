@@ -1,0 +1,94 @@
+.risk {
+  margin-top: 59px;
+
+  @media (min-width: 1440px) {
+    width: 1366px;
+    margin: 64px 0 0 30px;
+  }
+
+  &__table {
+    z-index: 50;
+    height: 400px;
+    width: 746px;
+    text-align: left;
+
+    @media (min-width: 768px) {
+      width: 1200px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 100%;
+      height: 620px;
+    }
+
+    &-body {
+
+      &>tr>td {
+        padding: 0 0 0 20px;
+      }
+
+      &--second,
+      &--fourth {
+        background-color: rgba(239, 239, 239, 0.2);
+      }
+    }
+
+    &-header {
+      background-color: rgba(192, 165, 112, 0.1);
+
+      &-cells {
+        padding: 0 0 0 20px;
+      }
+    }
+
+    &-container {
+      width: 96.875%;
+      margin-left: 10px;
+      overflow: auto;
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04),
+      0px 2px 6px rgba(0, 0, 0, 0.04),
+      0px 10px 20px rgba(0, 0, 0, 0.04);
+
+      @media (min-width: 1440px) {
+        width: 100%;
+        height: 620px;
+      }
+    }
+
+    &-header-main-cell {
+      height: 80px;
+    }
+  }
+
+  &__heading {
+    display: block;
+    width: 300px;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      width: 560px;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 40px;
+      width: 900px;
+      text-align: left;
+      margin: 0 0 30px 0;
+    }
+  }
+
+  &__line {
+    display: block;
+    margin: 15px auto;
+    height: 5px;
+    width: 139px;
+    background: linear-gradient(90deg, #97794D 10%, #E3CB8F 50%);
+
+    @media (min-width: 1440px) {
+      margin: 0 0 70px 0;
+    }
+  }
+}

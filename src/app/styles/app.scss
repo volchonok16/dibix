@@ -1,0 +1,15 @@
+.app {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1440px;
+
+  @media (min-width: 1440px) {
+    position: relative;
+
+    &__header-container {
+      background-image: url("../assets/DecorationSpiderweb-desktop.png");
+      background-position-x: -300px;
+      background-position-y: 45px;
+    }
+  }
+}

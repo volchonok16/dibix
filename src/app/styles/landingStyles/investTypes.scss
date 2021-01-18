@@ -1,0 +1,281 @@
+.invest-types {
+  position: relative;
+  width: 320px;
+  color: #fff;
+  height: 1344px;
+  padding-top: 39px;
+  background-image: url("../../assets/types-bg-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 100%;
+    background-image: url("../../assets/invest-types-desktop-bg.png");
+    height: 690px;
+  }
+
+  @media (min-width: 1440px) {
+    background-image: url("../../assets/invest-types-desktop-bg.png");
+    padding: 80px 247px 0 40px;
+  }
+
+  &__container {
+    @media (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    @media (min-width: 1440px) {
+      min-width: 1396px;
+      justify-content: space-between;
+    }
+  }
+
+  &__heading {
+    font-weight: bold;
+    font-size: 26px;
+    width: 300px;
+    margin: 0 auto 5px auto;
+    text-align: center;
+
+    &--container {
+      min-height: 160px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 30px;
+      width: 380px;
+      margin-left: 30px;
+      text-align: left;
+    }
+
+    @media (min-width: 1440px) {
+      margin: 0;
+      margin-bottom: 100px;
+      font-size: 40px;
+      width: 700px;
+    }
+  }
+
+  &__line {
+    display: block;
+    margin: 25px auto 40px auto;
+    height: 5px;
+    width: 139px;
+    background: linear-gradient(90deg, #97794D 10%, #E3CB8F 50%);
+
+    @media (min-width: 768px) {
+      margin-left: 50px;
+    }
+
+    @media (min-width: 1440px) {
+      margin: 30px 0 80px 0;
+    }
+  }
+
+  &__arrow {
+    margin-left: 15px;
+  }
+
+  &__top-chart,
+  &__actives,
+  &__currency,
+  &__ipo {
+    padding-top: 30.5px;
+    box-sizing: border-box;
+    height: 250px;
+
+    @media (min-width: 768px) {
+      width: 299px;
+    }
+
+    @media (min-width: 1440px) {
+      padding-top: 0;
+      border-right: 1px solid rgba(159, 159, 159, 0.3);
+    }
+
+    &-title {
+      margin: 0;
+      font-size: 16px;
+      color: #FEFDFB;
+      text-align: center;
+      padding-top: 19px;
+      vertical-align: middle;
+
+      @media (min-width: 1440px) {
+        text-align: left;
+        font-size: 20px;
+        padding-top: 40px;
+      }
+    }
+
+    &-text {
+      font-size: 14px;
+      color: #CECECE;
+      text-align: center;
+      margin: 13px 0 0 0;
+
+      @media (min-width: 768px) {
+        display: block;
+        margin: 10px auto 0 auto;
+        width: 260px;
+      }
+
+      @media (min-width: 1440px) {
+        text-align: left;
+        padding: 0;
+        margin: 15px 0 0 0;
+        font-size: 18px;
+        width: 299px;
+        height: 69px;
+      }
+    }
+
+    &-number {
+      box-sizing: border-box;
+      display: block;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      background-color: #C0A570;
+      font-size: 22px;
+      padding-top: 18px;
+      border-radius: 5px;
+      margin: 0 auto;
+
+      @media (min-width: 1440px) {
+        width: 70px;
+        height: 70px;
+        padding-top: 22px;
+        margin: 0;
+      }
+    }
+
+    &-btn {
+      cursor: pointer;
+      outline: none;
+      display: block;
+      font-size: 17px;
+      color: #C0A570;
+      background-color: inherit;
+      border: none;
+      margin: 25px auto 60px auto;
+
+      &:hover {
+        color: #948057;
+      }
+
+      @media (min-width: 1440px) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__ipo {
+    @media (min-width: 1440px) {
+      border-right: none;
+    }
+  }
+
+  &__button-more {
+    cursor: pointer;
+    display: block;
+    width: 243px;
+    height: 60px;
+    margin: 40px auto 0 auto;
+    background-color: inherit;
+    border: 1px solid #C0A570;
+    font-size: 17px;
+    color: #C0A570;
+    border-radius: 5px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #fff;
+      background-color: #C0A570;
+    }
+
+    @media (min-width: 768px) {
+      position: absolute;
+      top: 5px;
+      right: 75px;
+    }
+
+    @media (min-width: 1440px) {
+      left: unset;
+      right: 70px;
+      top: 95px;
+      margin: 0;
+    }
+  }
+
+  &__info-container {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.219);
+  }
+
+  &__info {
+    color: #000;
+    position: absolute;
+    z-index: 50;
+    margin: auto;
+    background-color: #fff;
+    background-image: url("../../assets/DecorationSpiderweb-mobile.svg");
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    overflow: auto;
+    border-radius: 10px;
+
+    @media (min-width: 768px) {
+      width: 800px;
+      height: 600px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 1000px;
+      height: 800px;
+    }
+
+    &-cross {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      fill: #000;
+      cursor: pointer;
+      left: 10px;
+      top: 20px;
+    }
+
+    &-heading {
+      text-align: center;
+    }
+  }
+
+  &__img {
+    float: right;
+    width: 120px;
+    height: 80px;
+    border-radius: 10px;
+    top: 70px;
+    left: 20px;
+
+    @media (min-width: 768px) {
+      width: 300px;
+      height: 200px;
+    }
+  }
+}
